@@ -32,4 +32,22 @@ user=api.GetUserTimeline(
                          include_rts=True,
                          trim_user=False,
                          exclude_replies=False)
-print(user)
+print("User TimeLine:   ", user)
+print("---------------------------------------------------")
+
+#GetCurrentTrends
+gtrends=api.GetTrendsCurrent(exclude=None)
+print("Current Global Trends:  " ,gtrends)
+print("---------------------------------------------------")
+
+#TopTrendsinBoston (or any WOEID entry)
+#LINK for WOEID: https://gist.githubusercontent.com/lukemelia/353493/raw/98749866fce79b591e45fb3325c853b4306a8882/WOEIDs%2520for%2520US%2520Cities%2520with%2520population%2520over%2520100K%2520as%2520of%25202008%2520(from%2520Wikipedia)
+woeid = 0
+print("ENTER WOEID OF CITY:   ",)
+input(woeid)
+if woeid == 0:
+    woeid= 2367105
+atrend=api.GetTrendsWoeid(woeid,exclude=None)
+print("TOP TRENDING IN WOEID CITY:   ", atrend)
+
+print("---------------------------------------------------")
