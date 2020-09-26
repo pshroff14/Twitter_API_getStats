@@ -9,4 +9,4 @@ Utilizing Twitter API to gather basic statistical data
 Reusults as shown include output of timeline based on entered twitter handle. Addtionally, Global and City Trending information will be gathered and outputted. 
 
 ## Other Task 
-Other ideas in improving the program is to utilze a GUI for easy user interface. Also developing the output data into a much readable format (rather than a large array). Other auxillary improvments could include, better input structures and
+Other ideas in improving the program is to utilze a GUI for easy user interface. Also developing the output data into a much readable format (rather than a large array). Other auxillary improvments could include, better input structures and utilizing a WOEID library available to the user. 
